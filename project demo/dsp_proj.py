@@ -18,15 +18,7 @@ gain=0
 #--------------------------------------------
 class DragableRect:
     def __init__(self, options):
-      """
-      each DragableRect instance is initialised with a dict :
-      d = DragableRect({"parent": canvas, "x": 10, "y": 10, ... })
-      dict keys are classic options of 
-      Canvas's create_rectangle method :
-      x, y, width, height, outline, fill, tags
-      "parent" is for the container canvas
-      "axis" : "both" to drag in evry
-      """
+
       self.parent = options["parent"] # canvas
       self.x = options["x"]
       self.y = options["y"]
